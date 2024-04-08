@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.PedidosActivity">
+
+    <Button
+        android:id="@+id/bt_novoPedido"
+        android:layout_width="108dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        android:text="Novo Pedido"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_porcentagemdeleite" />
+
+    <Button
+        android:id="@+id/bt_editarPedido"
+        android:layout_width="101dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="36dp"
+        android:text="Editar Pedido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_porcentagemdeleite" />
+
+    <Button
+        android:id="@+id/bt_excluirPedido"
+        android:layout_width="106dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:text="Excluir Pedido"
+        app:layout_constraintEnd_toStartOf="@+id/bt_editarPedido"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toEndOf="@+id/bt_novoPedido"
+        app:layout_constraintTop_toBottomOf="@+id/et_porcentagemdeleite" />
+
+    <EditText
+        android:id="@+id/et_fkcpf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Cliente (CPF)"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_idchocolate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Numero do Pedido"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_fkcpf" />
+
+    <EditText
+        android:id="@+id/et_tipodechocolate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Tipo de Chocolate"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_idchocolate" />
+
+    <EditText
+        android:id="@+id/et_tipodecastanha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Tipo de Castanha"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_tipodechocolate" />
+
+    <EditText
+        android:id="@+id/et_porcentagemdeleite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Porcentagem de Leite"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_tipodecastanha" />
+
+    <Button
+        android:id="@+id/bt_voltarPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="524dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
